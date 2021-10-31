@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shobify</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- ============ navbar ============ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container">
+          <!-- <div class="burger-box">
+            <div class="burger-line"></div>  
+          </div> -->
+          <a class="hamburger-brand" href="#"><img src="images/nav.png" alt="" class="d-none d-lg-block me-5"></a>
+          <a class="navbar-brand me-auto ms-1" href="#">SHOBIFY</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <span class="nav-link" aria-current="page" href="#">Home</span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link" href="#">Popular</span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link" href="#">Contact</span>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control" type="search" placeholder="Search Products" aria-label="Search">
+            </form>
+            <!-- ============ btn nav desktop ============ -->
+            <form class="d-flex ms-lg-2 d-none d-lg-block">
+                <button class="btn btn-sign-up me-1" type="submit">Sign Up</button>
+                <button class="btn btn-login" type="submit">Login</button>
+              </form>
+            <!-- ============ btn nav mobile ============ -->
+            <form class="d-flex ms-lg-2 d-lg-none mt-2 justify-content-center">
+                <button class="btn btn-sign-up-mobile px-4 me-2" type="submit">Sign Up</button>
+                <button class="btn btn-login-mobile px-4" type="submit">Login</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- ============ header ============ -->
+      <section class="section-head">
+            <div class="container mt-5 ">
+              <div class="row">
+                  <div class="col-lg-7 text-center">
+                    <div class="head-product">
+                      <img src="images/shoes/product.png" alt="" class="product me-lg-4 ms-lg-0">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 text-lg-end">
+                      <div class="title my-5">
+                          <h1 class="mb-3">YOUR CHOICES</h1>
+                          <h2>Popular all time <br> Sneakers</h2>
+                          <div class="btn-anim">
+                            <button type="button" class="btn btn-more mt-4 mb-5 me-lg-5">M O R E</button>
+                          </div>
+                          <div class="warna ms-lg-5 text-center">
+                            <span class="dot satu mx-3"></span>
+                            <span class="dot dua mx-3"></span>
+                            <span class="dot tiga mx-3"></span>
+                          </div>
+                      </div>    
+                  </div>
+              </div>
+          </div>
+      </section>
+      <main>
+
+        <!-- ============ shoes list card ============ -->
+        <section class="section-satu py-5 text-center">
+          <div class="head-text">
+            <h2>Popular Shoes</h2>
+            <ul class="p-0">
+              <li class="list active" data-filter="all">ALL</li>
+              <li class="list" data-filter="adidas">ADIDAS</li>
+              <li class="list" data-filter="nike">NIKE</li>
+              <li class="list" data-filter="puma">PUMA</li>
+            </ul>
+          </div>
+         
+          <div class="container">
+            <div class="row justify-content-center shoes-list">
+
+                <div class="shoes adidas py-4 px-3">
+                  <div class="thumbnail">
+                    <img src="images/shoes/shoes-one.jpg" class="thumb" alt="">
+                  </div>
+                  <h3 class="my-3">Adidas</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa mollitia dignissimos autem eaque minus fugiat iure illum, quis voluptates ratione.</p>
+                  <div class="btn-shoes mt-5">
+                    <button class="btn px-2">C H E C K O U T</button>
+                  </div>
+                </div>
+                <div class="shoes adidas py-4 px-3">
+                  <div class="thumbnail">
+                    <img src="images/shoes/shoes-two.jpg" class="thumb" alt="">
+                  </div>
+                  <h3 class="my-3">Adidas</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa mollitia dignissimos autem eaque minus fugiat iure illum, quis voluptates ratione.</p>
+                  <div class="btn-shoes mt-5">
+                    <button class="btn px-2">C H E C K O U T</button>
+                  </div>
+                </div>
+                <div class="shoes nike py-4 px-3">
+                  <div class="thumbnail">
+                    <img src="images/shoes/shoes-three.jpg" class="thumb" alt="">
+                  </div>
+                  <h3 class="my-3">Nike</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa mollitia dignissimos autem eaque minus fugiat iure illum, quis voluptates ratione.</p>
+                  <div class="btn-shoes mt-5">
+                    <button class="btn px-2">C H E C K O U T</button>
+                  </div>
+                </div>
+                <div class="shoes adidas py-4 px-3">
+                  <div class="thumbnail">
+                    <img src="images/shoes/shoes-four.jpg" class="thumb" alt="">
+                  </div>
+                  <h3 class="my-3">Adidas</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa mollitia dignissimos autem eaque minus fugiat iure illum, quis voluptates ratione.</p>
+                  <div class="btn-shoes mt-5">
+                    <button class="btn px-2">C H E C K O U T</button>
+                  </div>
+                </div>
+                <div class="shoes puma py-4 px-3">
+                  <div class="thumbnail">
+                    <img src="images/shoes/shoes-five.jpg" class="thumb" alt="">
+                  </div>
+                  <h3 class="my-3">Puma</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa mollitia dignissimos autem eaque minus fugiat iure illum, quis voluptates ratione.</p>
+                  <div class="btn-shoes mt-5">
+                    <button class="btn px-2">C H E C K O U T</button>
+                  </div>
+                </div>
+                <div class="shoes puma py-4 px-3">
+                  <div class="thumbnail">
+                    <img src="images/shoes/shoes-six.jpg" class="thumb" alt="">
+                  </div>
+                  <h3 class="my-3">Puma</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa mollitia dignissimos autem eaque minus fugiat iure illum, quis voluptates ratione.</p>
+                  <div class="btn-shoes mt-5">
+                    <button class="btn px-2">C H E C K O U T</button>
+                  </div>
+                </div>
+                <div class="shoes puma py-4 px-3">
+                  <div class="thumbnail">
+                    <img src="images/shoes/shoes-seven.jpg" class="thumb" alt="">
+                  </div>
+                  <h3 class="my-3">Puma</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa mollitia dignissimos autem eaque minus fugiat iure illum, quis voluptates ratione.</p>
+                  <div class="btn-shoes mt-5">
+                    <button class="btn px-2">C H E C K O U T</button>
+                  </div>
+                </div>
+                <div class="shoes puma py-4 px-3">
+                  <div class="thumbnail">
+                    <img src="images/shoes/shoes-eight.jpg" class="thumb" alt="">
+                  </div>
+                  <h3 class="my-3">Puma</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa mollitia dignissimos autem eaque minus fugiat iure illum, quis voluptates ratione.</p>
+                  <div class="btn-shoes mt-5">
+                    <button class="btn px-2">C H E C K O U T</button>
+                  </div>
+                </div>
+            
+              
+              
+
+
+            </div>
+          </div>
+        </section>
+      </main>
+
+     <!-- FOOTER -->
+    <section class="section-footer border-top">
+   
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+
+              <div class="col-12 col-lg-3">
+              <h5>FEATURES</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Social Media Kit</a></li>
+                <li><a href="#">Affiliate</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h5>ACCOUNT</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Refund</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Rewards</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h5>COMPANY</h5>
+              <ul class="list-unstyled">               
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Media</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h5>GET CONNECTED</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Jakarta</a></li>
+                <li><a href="#">Indonesia</a></li>
+                <li><a href="#">0858 8085 3298</a></li>
+                <li><a href="#">lubianca.samora@gmail.com</a></li>
+              </ul>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row border-top justify-content-center align-items-center pt-4">
+          <div class="col-auto text-gray-500 font-weight-light">
+            2021 Copyright Shobify • All rights reserved • Made in Jakarta vs Everybody
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+<script src="libraries/jquery/jquery-3.6.0.js"></script>
+<script src="script/script.js"></script>
+</body>
+
+</html>

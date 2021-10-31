@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    word-wrap: break-word; 
+    color: #000;
+    background-color: #fff;
+}
+
+// Mobile
+@media (max-width: 992px) { 
+    .nav-link {
+        text-align: center;
+    }
+    .title {
+        text-align: center;
+        h1 {
+            font-size: 55px !important;
+        }
+        h2 {
+            font-size: 35px !important;
+        }
+    }
+ }
+ 
+// Desktop
+@media (min-width: 992px) {  
+    .nav-item.active {
+        border-bottom: 2px solid #000;
+    }
+}
+
+// ============ animation ============
+@keyframes fadeIn  {
+    to {
+        opacity: 1;
+    }
+}
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5;
+}
+
+//  mengurangi opacity gambar yang sudah di klik
+.clicked {
+    opacity: 0.5;
+}
+
+// ============ assets ============
+.btn:active {
+    bottom: 3px;
+ }
+ h2 {
+    font-size: 2.4rem;
+ }
+ ul li {
+     cursor: pointer;
+ }
+
+//  BIKIN HAMBURGER + ANIMASINYA SUSAH
+.burger-box {
+    margin: 10px;
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border: 3px solid#000;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    .burger-line {
+        width: 50px;
+        height: 6px;
+        background: #000;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+    }
+    .burger-line::before,
+    .burger-line::after {
+        width: 50px;
+        height: 6px;
+        background: #000;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+    }
+}
+
+
+// ============ navbar ============
+.navbar {
+        opacity: 0;
+        transform: translate(0, -50px);
+        transition: 1.2s;
+    .navbar-brand {
+        font-family: 'Nunito Sans', sans-serif !important;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .navbar-brand:active, .hamburger-brand:active {
+        transform: translate(0, -4px);
+    }
+    .nav-link {
+        font-size: 24px;
+        color: #000 !important;
+    }
+    .nav-link:hover {
+        color: #6590FF !important;
+        transform: translate(0, -4px);
+        transition: .4s;
+    }
+    
+    .form-control {
+        border: 2px solid #000;
+    }
+    .btn-sign-up {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #000;
+        border: 2px solid #000;
+        width: 90px;
+    }
+    .btn-login {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #fff !important;
+        background-color: #000;
+        width: 90px;
+    }
+    .btn-login:hover, 
+    .btn-sign-up:hover {
+        transform: translate(0, -4px);
+        transition: .4s;
+    }
+
+    // ============ btn nav mobile ============
+    .btn-sign-up-mobile {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #000;
+        border: 2px solid #000;
+        width: 100%;
+        
+    }
+    .btn-login-mobile {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #fff !important;
+        background-color: #000;
+        width: 100%;
+        
+    }
+}
+.showNavbar {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+// ============ section-head ============
+.section-head {
+    min-height: 580px;
+    overflow: hidden;
+    .product {
+        opacity: 0;
+        transform: translate(-600px, 0) rotate(-25deg);
+        transition: 1.2s;
+        width: 85%;
+    }
+    .showProduct {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    .product:hover {
+        width: 100%;
+        transition: 1s;
+    }
+    .title {
+        font-family: 'Nunito Sans', sans-serif !important; 
+        h1 {
+            opacity: 0;
+            transform: translate(600px, 0) rotate(25deg);
+            transition: 1.2s;
+            font-size: 2.7rem;
+            font-weight: bolder;
+        }
+        .showH1 {
+            opacity: 1;
+            transform: translate(0, 0);
+            color: #ff7b00;
+        }
+        h2 {
+            opacity: 0;
+            transform: translate(600px, 0) rotate(25deg);
+            transition: 1.3s;
+            font-weight: 600;
+        }
+        .showH2 {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        .btn-anim {
+             opacity: 0;
+             transform: translate(600px, 0) rotate(25deg);
+             transition: 1.4s;
+        }
+        .showBtn {
+             opacity: 1;
+             transform: translate(0, 0);
+        }
+
+        .btn {
+            position: relative;
+            width: 100px;
+            transition: .7s;
+            box-shadow: inset 0 0 0 0 #EBFF00;
+            color: #fff;
+            background-color: #000;
+            border: none;
+            border-radius: 0;
+            font-size: 15px;
+            font-weight: bolder;
+        }  
+        .btn:hover {
+           box-shadow: inset 100px 0 0 0 #ff7b00;
+           color: #000;
+        }
+    }
+    .dot {
+        opacity: 0;
+        transform: translate(0, 100px);
+        transition: 1s;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .showDot {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    .dot:hover {
+        height: 80px;
+        width: 80px;
+        transition: 1s;
+    }
+
+    .satu {
+        background-color: #6590FF;
+    }
+    .dua {
+        background-color: #000;
+    }
+    .tiga {
+        background-color: #EBFF00;
+    }
+}
+
+// ============ section shoes list ============
+.section-satu {
+    min-height: 1600px;
+    background-color: #eee;
+
+    .head-text {
+        opacity: 0;
+        transform: translate(0, -60px);
+        transition: 1s;
+    }
+    .showHeadText {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+            margin: 50px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #53706F;
+            cursor: pointer;
+            &.active {
+                color: #ff1e00;
+            }
+        }
+    }
+    .shoes {
+        opacity: 0;
+        transform: translate(0, -50px);
+        transition: 1s;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 15px 10px;
+        text-align: center;
+        width: 250px;
+        background-color: #fff;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        .thumbnail {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            img {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            img:hover {
+                transform: translateY(-50px);
+                opacity: 0.6;
+                transition: 1s;
+            }
+        }
+        h3 {
+            font-weight: 700;
+        }
+        p {
+            text-align: justify;
+        }
+        .btn {
+            position: relative;
+            width: 80%;
+            transition: 1s;
+            box-shadow: inset 0 0 0 0 #EBFF00;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1rem;
+            background-color: #000;
+            border-radius: 50px;
+            border: none;
+        }
+        .btn:hover {
+            box-shadow: inset 500px 0 0 #ff1e00;
+            color: #000;
+         }
+    }
+    .showShoes {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+// ============ footer ============
+.section-footer {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+    min-height: 320px;
+    background-color: #ff7b00;
+    color: #fff;
+    a {
+    text-decoration: none;
+    color: #fff;
+    }
+}
+.showFooter {
+    opacity: 1;
+    transform: translateY(0);
+}
+
